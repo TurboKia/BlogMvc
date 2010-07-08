@@ -1,0 +1,8 @@
+debug/
+bin/
+*.suo
+obj/
+*.swp
+*.pidb
+*.userprefs
+*.Cache

@@ -1,0 +1,8 @@
+﻿Another Post
+---
+## Heading
+This is another post
+
+* Yes
+* It's
+* MVC

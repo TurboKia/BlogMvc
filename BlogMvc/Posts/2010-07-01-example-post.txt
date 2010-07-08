@@ -1,0 +1,7 @@
+﻿Example Post
+---
+A new post...
+
+here is an example embedded source file
+
+Pretty :)

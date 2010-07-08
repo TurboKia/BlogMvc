@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+        <link rel="stylesheet" href="<%= Url.Content("~/Content/Screen.css") %>" type="text/css" media="screen, projection, print">
+    </head>
+    <body>
+        <div class="container">
+            <div id="header">
+                <div id="title">
+                    <h3><%= Html.RouteLink("Blog", "Root") %></h3>
+                </div>
+                <div id="links">
+                    <ul class="links quiet">
+                        <li><%= Html.ActionLink("Archive", "Archive", "Posts") %></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="space" />
+            <div id="content">
+               <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+            </div>
+            <hr class="space" />
+            <div id="footer">
+                <p class="small quiet">&copy; Author <%= DateTime.Now.Year %></p>
+            </div>
+        </div>
+    </body>
+    </html>
