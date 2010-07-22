@@ -1,1 +1,1 @@
-ASP.NET MVC version of my blog
+ASP.NET MVC version of my blog.
